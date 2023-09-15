@@ -104,10 +104,14 @@
   
   <body>
     <main class="">
+<%  ### ADMIN MENU
+=begin %>
     <% if admin_signed_in? %>
       <!--USER MENU-->
       <%= render "shared/admin_menu" %>
     <% end %>
+    <%
+=end %>
       <%= yield %>
     </main>
 
