@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   #  get "admins", to: "devise/sessions#new"
   #end
 
-  devise_for :admins, controllers: { registrations: "registrations", sessions: "sessions" }
+  #devise_for :admins, controllers: { registrations: "registrations", sessions: "sessions" }
   #root "pages#home"
   root "messages#home2"
 
@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   #resources :posts
   
   #resources :discover_flights
-  #resources :messages
+  resources :messages
   #resources :enrollments
   #resources :book_downloads
   #resources :checkouts
@@ -32,7 +32,7 @@ Rails.application.routes.draw do
 
   # Contact form
   #get 'contact', to: 'messages#new', as: :contact
-  #get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
+  get 'contact-confirmation', to: 'messages#confirmation', as: :contact_confirmation
   #get 'visit-simplifly', to: 'messages#location', as: :location
   #get 'instruct-at-simplifly', to: 'messages#cfi', as: :cfi
 

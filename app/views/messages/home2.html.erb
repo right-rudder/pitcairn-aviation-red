@@ -55,11 +55,23 @@
           <p class="text-lg text-gray-700">At Pitcairn Aviation LLC, we're more than just an FBO. We're your aviation partner. Contact us today at (610) 495-7000 to learn more about our services and get in touch.</p>
         </div>
         <%= render "shared/visit_fbo"%>
-
+        
+        <div class="flex flex-col lg:flex-row-reverse items-center justify-center w-full">
+          <div class="lg:w-1/2 px-5">
+            <%= turbo_frame_tag 'form-section' do %>
+              <%= render 'form', message: @message%>
+            <% end %>
+          </div>
+          <div class="lg:w-1/2 grid place-items-center">
+            <%= image_tag "pitcairn-aviation-runway.webp", alt: "Runway at KPTW", class: "lg:rounded-2xl lg:w-3/4 lg:mx-10"%>
+          </div>
+        </div>
       </div>
-
+        
     </div>
 
   </div>
 
 </section>
+    
+
