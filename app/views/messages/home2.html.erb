@@ -58,7 +58,7 @@
         
         <div class="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-center w-full">
           <div class="lg:w-1/2 px-5">
-            <%= turbo_frame_tag 'form-section' do %>
+            <%= turbo_frame_tag 'form-section', class: "h-full" do %>
               <%= render 'form', message: @message%>
             <% end %>
           </div>
