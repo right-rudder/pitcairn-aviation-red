@@ -44,7 +44,7 @@
         </div>
 
         <h3 class="text-xl font-semibold mt-10 mb-16 text-center">Fuel Prices</h3>
-        <div class="flex flex-col-reverse lg:flex-row max-w-3xl mx-auto mb-10">
+        <div class="flex flex-col-reverse lg:flex-row max-w-3xl mx-auto mb-10 items-center w-full">
           <div class="lg:w-1/2 flex flex-col items-center">
             <table class="w-full text-sm text-left text-gray-500 border">
               <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
@@ -66,10 +66,10 @@
                     100 LL
                   </th>
                   <td class="px-6 py-4">
-                    $6.36
+                    $6.43
                   </td>
                   <td class="px-6 py-4">
-                    $6.11
+                    $6.18
                   </td>
                 </tr>
                 <tr class="bg-white">
@@ -86,7 +86,7 @@
               </tbody>
             </table>
             <p class="text-sm italic pt-5">
-            Last updated on: September 29, 2023
+            Last updated on: October 9, 2023
             </p>
           </div>
           <div class="lg:w-1/2 flex flex-col items-center justify-center pb-20">
@@ -104,13 +104,39 @@
             </p>
           </div>
           <div class="lg:w-1/2 flex flex-col items-center justify-center">
-            <%= image_tag "pitcairn-aviation-enterprise.webp", class: "w-80", alt: "Enterprise Car Rental logo"%>
+            <%= link_to "https://www.enterprise.com/en/car-rental-locations/us/pa/limerick-572l.html", target: "blank" do%>
+              <%= image_tag "pitcairn-aviation-enterprise.webp", class: "w-96 hover:scale-105 duration-300", alt: "Enterprise Car Rental logo"%>
+            <%end%>
+            Enterprise is onsite at the airport
             <div class="flex gap-10 pt-10">
-              <%= image_tag "pitcairn-aviation-hertz.webp", class: "w-32", alt: "Hertz Car Rental logo"%>
-              <%= image_tag "pitcairn-aviation-avis.webp", class: "w-32", alt: "Avis Car Rental logo"%>
+              <%= link_to "https://www.hertz.com/rentacar/reservation/", target: "blank" do%>
+                <%= image_tag "pitcairn-aviation-hertz.webp", class: "w-32 hover:scale-105 duration-300", alt: "Hertz Car Rental logo"%>
+              <%end%>
+              <%= link_to "https://www.avis.com/en/home", target: "blank" do%>
+                <%= image_tag "pitcairn-aviation-avis.webp", class: "w-32 hover:scale-105 duration-300", alt: "Avis Car Rental logo"%>
+              <% end %>
             </div>
+            <p class="text-center max-w-sm">
+              Hertz and Avis services are available can deliver rental cars to the airport
+            </p>
           </div>
         </div>
+
+        <h3 class="text-xl font-semibold mb-12 text-center">Weather</h3>
+        <div class="flex flex-col lg:flex-row w-full mb-12">
+          <div class="lg:w-1/2 flex flex-col items-center  lg:mx-10 mx-5 lg:ml-32">
+            <a href="https://metar-taf.com/KPTW" target="blank" id="metartaf-EI3gi3JA" class="w-72" style="font-size:18px; font-weight:500; color:#000; display:block">METAR Heritage Field</a>
+            <script async defer crossorigin="anonymous" src="https://metar-taf.com/embed-js/KPTW?layout=landscape&visibility=mi&qnh=inHg&rh=rh&target=EI3gi3JA"></script>  
+          </div>
+          <div class="lg:w-1/2 flex flex-col items-center">
+            <h4 class="font-semibold mx-5 lg:mr-20 pb-10">Raw METAR Data</h4>
+            <p class="mx-5 lg:mr-20">
+                <% metar_data = fetch_metar_data %>
+                <%= metar_data %>
+            </p>
+          </div>
+        </div>
+        
 
         <h3 class="text-xl font-semibold mb-12 text-center">Companies On The Field</h3>
         <div class="flex flex-col gap-10 lg:flex-row max-w-4xl px-5 mx-auto mb-10">
