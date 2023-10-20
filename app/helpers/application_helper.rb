@@ -29,17 +29,25 @@ module ApplicationHelper
   require 'uri'
 
   def fetch_metar_data
-    url = URI.parse('https://beta.aviationweather.gov/cgi-bin/data/metar.php?ids=KPTW')
-    http = Net::HTTP.new(url.host, url.port)
-    http.use_ssl = (url.scheme == 'https')
-
-    request = Net::HTTP::Get.new(url.request_uri)
-    response = http.request(request)
-
-    if response.code == '200'
-      response.body
-    else
-      'Failed to fetch METAR data'
+    begin
+      url = URI.parse('https://aviationweather.gov/cgi-bin/data/metar.php?ids=KPTW')
+      http = Net::HTTP.new(url.host, url.port)
+      http.use_ssl = (url.scheme == 'https')
+  
+      request = Net::HTTP::Get.new(url.request_uri)
+      response = http.request(request)
+  
+      if response.code == '200'
+        return response.body
+      else
+        return 'Failed to fetch METAR data'
+      end
+    rescue SocketError => e
+      return 'Failed to open TCP connection'
+    rescue URI::InvalidURIError => e
+      return 'Invalid URL'
+    rescue StandardError => e
+      return "An error occurred: #{e.message}"
     end
   end
 end
