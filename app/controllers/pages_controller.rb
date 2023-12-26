@@ -63,8 +63,7 @@ class PagesController < ApplicationController
   def helicopter_training
   end
 
-  def about_us
-  end
+ 
 
   def advanced_training
   end
@@ -75,6 +74,10 @@ class PagesController < ApplicationController
   def pilot_resources
   end
 
-  def careers
+  def services
   end
+
+  def pilot_tech
+  end
+
 end

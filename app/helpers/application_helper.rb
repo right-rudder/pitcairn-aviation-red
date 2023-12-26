@@ -25,6 +25,13 @@ module ApplicationHelper
   end
 
 
+  def latest_fuel_price
+    FuelPrice.order(updated_at: :desc).first  
+  end 
+
+
+
+
   require 'net/http'
   require 'uri'
 

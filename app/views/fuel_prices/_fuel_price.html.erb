@@ -1,0 +1,27 @@
+<div id="<%= dom_id fuel_price %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Jet a self service:</strong>
+    <%= fuel_price.jet_a_self_service %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Jet a full service:</strong>
+    <%= fuel_price.jet_a_full_service %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ll self service:</strong>
+    <%= fuel_price.ll_self_service %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Ll full service:</strong>
+    <%= fuel_price.ll_full_service %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this fuel price", fuel_price, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this fuel price', edit_fuel_price_path(fuel_price), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

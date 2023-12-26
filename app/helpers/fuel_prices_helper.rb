@@ -1,0 +1,2 @@
+module FuelPricesHelper
+end

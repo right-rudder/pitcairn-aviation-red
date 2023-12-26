@@ -1,0 +1,2 @@
+class FuelPrice < ApplicationRecord
+end

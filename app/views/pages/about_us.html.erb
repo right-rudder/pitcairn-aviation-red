@@ -1,71 +1,198 @@
-<%= render "shared/header"%>
+<%= render "shared/header" %>
 
 
-<section class="bg-slate-100">
-  <div class="flex flex-col lg:flex-row items-center justify-center">
-    <!--Text-->
-    <div class="lg:w-1/2 flex flex-col items-end">
-      <!--Container for text so I can align them-->
-      <div class="lg:w-3/4 text-center lg:text-left pt-20 lg:pt-10">
-        <div class="pb-3 w-full">ABOUT US</div>
-        <h1 class="font-bold text-5xl pb-8">Meet Bill Macon.</h1>
-        <!--Mobile image-->
-        <%= image_tag "bill_macon_peace.webp", class: "lg:hidden"%>
-        <div class="italic text-slate-500 text-center text-sm px-5 lg:hidden pb-10">
-          <!--Sub text-->
+   
+<header class="w-full bg-flyplane bg-cover h-screen-2/4 lg:h-screen-3/4 bg-center flex justify-center items-center">
+<section class="px-3 py-5  lg:py-10 font-header">
+    <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
+        <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
+            <p class="text-4xl font-bold md:text-7xl text-white">Get to Know Us</p>
+            <p class="text-4xl font-bold md:text-6xl uppercase text-neutral+50">Pitcairn Aviation</p>
+            <p class="mt-2 text-sm md:text-lg text-center text-white">Your trusted Fixed-Base Operator (FBO) at Heritage Field Airport, serving the Pottstown, PA area.
+            Reach our team at (610) 495-7000.</p>
+            
         </div>
+        <div class="order-1 lg:order-2">
+       
         
-        <div class="text-base text-left px-10 lg:pl-0 lg:pr-8">
-          <p class="pb-5 p-text">
-            I acquired Ideal Aviation in 2011 and since then I've earned my private, instrument, and multi-engine ratings.  It's been a fantastic opportunity to combine work and pleasure.  I enjoy flying for business and personal trips.
-          </p>
-
-          <p class="pb-5 p-text">
-            Our family has a long history in aviation.  My father and mother were both pilots.  In the 1930s, my grandfather owned the Von Hoffmann Aircraft Corporation and the Von Hoffmann Flying School.  
-          </p>
+       
         </div>
-      </div>
     </div>
-    <!--Desktop Picture-->
-    <div class="lg:w-1/2 py-20 lg:flex flex-col items-center hidden">
-      <div class="flex flex-col items-center lg:w-1/2">
-        <%= image_tag "bill_macon_peace.webp", class: "lg:rounded-xl"%>
-        <div class="italic text-slate-500 text-center text-sm">
-          <!--Subtext-->
+</section>
+</header>
+
+
+
+
+
+
+
+<!--   body-->
+
+<section class="bg-gray-100">
+<div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+        <div class="max-w-lg">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl uppercase">About<span class="text-red-600"> Us</span></h2>
+            <p class="mt-4 text-gray-800 text-lg italic text-justify">Heritage Field started as an airfield in 1928, it was then known as Pottstown-Limerick airport. It received airport licensing from the state in 1931. In 1968 PECO acquired the airport due to its proximity to the planned Limerick nuclear generation plant. PECO contracted with PennAirways to manage the airport. In 2009 Pottstown-Limerick airport and PennAirways were acquired by local business man, avid pilot and vintage aircraft collector John K Desmond Jr and the airport name was changed to Heritage Field.  After Mr Desmond’s passing in 2014 the future of the airport was in limbo until new ownership could be found.
+
+            After 8 long years searching for a buyer, in 2022, Heritage Field was acquired by David & Rachael Pitcairn.  The Pitcairn’s are aviation enthusiasts and David’s family has historical connection to aviation in the Philadelphia region and beyond.  David’s great uncle was Harold F. Pitcairn, the founder of Pitcairn Aircraft Co which manufactured the famed Pitcairn Mailwing used by the US Postal Service coining the term “Air Mail”.  Harold Pitcairn was also the founder of the Pitcairn Flying School and Passenger Service which later became Eastern Airlines.  David’s passion for flying was inspired by Harold but it was fostered by his late father and fellow aviator Laren Pitcairn who would take him to Airshows, build model airplanes and eventually take him flying.  David’s love of aviation is shared by his wife Rachael.  Together they have shared a dream to develop an airport where they could help grow aviation and create a future for themselves and their two sons Theodore and Augustus.
+            
+            Today, Pitcairn Aviation LLC has replaced PennAirways as the FBO and each year Heritage Field hosts a number of events including the annual Fly-in Pancake Breakfast welcoming visitors to the airport for pancakes, airplane rides, vintage aircraft and airplane tours for well over 50 years.</p>
+            <div class="mt-8">
+                <a href="https://en.wikipedia.org/wiki/Pitcairn_Aircraft_Company", target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Learn more about us
+                    <span class="ml-2">&#8594;</span></a>
+            </div>
         </div>
-      </div>
+        <div class="mt-12 md:mt-0">
+        <%= image_tag "pilot2.webp",class: "lg:h-screen-2/3 lg:w-4/7 lg:rounded-2xl lg:drop-shadow-2xl"%>
+        </div>
     </div>
-  </div>
-</section>
-
-<section class="flex flex-col lg:flex-row lg:pt-10">
-  <div class="flex flex-col items-center lg:w-1/2">
-    <%=image_tag "beverly-vonhoffmann.webp", alt: "Beverly Von Hoffman", class: "lg:w-2/3"%>
-    <p class="py-10 p-text max-w-lg mx-5 lg:mx-auto">My mother, Beverly von Hoffmann, obtained her pilot license in 1943, just past her 18th birthday.  She reveled flying her Stinson during her days at Stevens College in Columbia, Missouri, often taking friends on weekend outings to St. Louis and beyond.</p>
-  </div>
-  <div class="flex flex-col items-center lg:w-1/2">
-    <%=image_tag "bill_macon_sr.webp", alt: "Bill Macon Sr.", class: "lg:w-1/2 lg:pb-8"%>
-    <p class="py-10 p-text max-w-lg mx-5 lg:mx-auto">My father, Bill Macon Sr., was a pilot in the U.S. Army Air Corps during World War II.  “Big Bill” is pictured here after completing his flight training at Cimmaron Army Airfield in Oklahoma in 1943.  Macon, Sr. went on to teach radio communications at Scott Field during war, just down the road from where Ideal Aviation is now.</p>
-  </div>
-</section>
-
-<section class="bg-gradient-to-t lg:bg-gradient-to-l from-ideal-blue to-ideal-blue flex flex-col items-center text-white">
+</div>
+</section>  
   
-  <h2 class="text-4xl font-bold py-10 text-center">We've Come a Long Way Since Then</h2>
 
-  <div class="max-w-2xl mx-auto">
-    <%=image_tag "ideal_group.webp", alt: "Group picture of Ideal Aviation team", class: ""%>
+<!--  body2 -->
 
-    <p class="p-text py-10 px-5 lg:px-0">
-      Ideal Aviation expanded its operation and spans over three hangars in St. Louis Downtown Airport.  Today, we have over 15 flight instructors and 10 different aircraft and we're continually growing.  Ideal Aviation is a full-service aircraft rental, flight training, and fractional aircraft ownership that has been serving both present and future pilots.  We wouldn't be able to get this far without the hard work and commitment from our team.
-    </p>
-    
+<br>
+<div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
+<div class="absolute inset-0">
+  <div class="h-1/3 bg-white sm:h-2/3"></div>
+</div>
+<div class="relative mx-auto max-w-7xl">
+  <div class="text-center">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lorem ipsum</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+      This is your life and it's ending one minute @ a time...</p>
   </div>
-  <%= link_to "MEET OUR TEAM", our_team_path, data: { turbo: false }, class: "btn-primary bg-slate-500 hover:bg-slate-400 mb-10" %>
-</section>
+  <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
 
-<%= render "shared/visit_ideal"%>
+    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex-shrink-0">
+        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
+      </div>
+      <div class="flex flex-1 flex-col justify-between bg-white p-6">
+        <div class="flex-1">
+          <p class="text-sm font-medium text-indigo-600">
+            <a href="#" class="hover:underline">Article</a>
+          </p>
+          <a href="#" class="mt-2 block">
+            <p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
+            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
+          </a>
+        </div>
+        <div class="mt-6 flex items-center">
+          <div class="flex-shrink-0">
+            <a href="#">
+              <span class="sr-only">Roel Aufderehar</span>
+              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+            </a>
+          </div>
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-900">
+              <a href="#" class="hover:underline">Roel Aufderehar</a>
+            </p>
+            <div class="flex space-x-1 text-sm text-gray-500">
+              <time datetime="2020-03-16">Mar 16, 2020</time>
+              <span aria-hidden="true">·</span>
+              <span>6 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<%= render "shared/cta_were_experts"%>
+    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex-shrink-0">
+        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
+      </div>
+      <div class="flex flex-1 flex-col justify-between bg-white p-6">
+        <div class="flex-1">
+          <p class="text-sm font-medium text-indigo-600">
+            <a href="#" class="hover:underline">Video</a>
+          </p>
+          <a href="#" class="mt-2 block">
+            <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
+            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi.,
+              tempore temporibus quo laudantium.</p>
+          </a>
+        </div>
+        <div class="mt-6 flex items-center">
+          <div class="flex-shrink-0">
+            <a href="#">
+              <span class="sr-only">Brenna Goyette</span>
+              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+            </a>
+          </div>
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-900">
+              <a href="#" class="hover:underline">Brenna Goyette</a>
+            </p>
+            <div class="flex space-x-1 text-sm text-gray-500">
+              <time datetime="2020-03-10">Mar 10, 2020</time>
+              <span aria-hidden="true">·</span>
+              <span>4 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+      <div class="flex-shrink-0">
+        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
+      </div>
+      <div class="flex flex-1 flex-col justify-between bg-white p-6">
+        <div class="flex-1">
+          <p class="text-sm font-medium text-indigo-600">
+            <a href="#" class="hover:underline">Case Study</a>
+          </p>
+          <a href="#" class="mt-2 block">
+            <p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
+            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
+              perferendis hic.</p>
+          </a>
+        </div>
+        <div class="mt-6 flex items-center">
+          <div class="flex-shrink-0">
+            <a href="#">
+              <span class="sr-only">Daniela Metz</span>
+              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+            </a>
+          </div>
+          <div class="ml-3">
+            <p class="text-sm font-medium text-gray-900">
+              <a href="#" class="hover:underline">Daniela Metz</a>
+            </p>
+            <div class="flex space-x-1 text-sm text-gray-500">
+              <time datetime="2020-02-12">Feb 12, 2020</time>
+              <span aria-hidden="true">·</span>
+              <span>11 min read</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+
 
 <%= render "shared/footer"%>
+
+
+
+<!--Sticky div-->
+</div>
+
+
+
+
+
+
+
+

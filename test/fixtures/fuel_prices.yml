@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jet_a_self_service: 9.99
+  jet_a_full_service: 9.99
+  ll_self_service: 9.99
+  ll_full_service: 9.99
+
+two:
+  jet_a_self_service: 9.99
+  jet_a_full_service: 9.99
+  ll_self_service: 9.99
+  ll_full_service: 9.99
