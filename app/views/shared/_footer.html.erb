@@ -21,7 +21,11 @@
               <li><a href="#" class="hover:text-neutral-900">Pottstown, PA 19464</a></li>
               <li><a href="#" class="hover:text-neutral-900">(610) 495-7000</a></li>
               <li><a href="#" class="hover:text-neutral-900">info@pitcairnaviation.com</a></li>
-              <li>KPTW 221654Z AUTO 00000KT 10SM <br>OVC055 M01/M08 A3047 RMK <br> AO2 SLP321 T10111083</li>
+              <li><div class="max-w-xs mx-auto mt-5">
+              <% metar_data = fetch_metar_data %>
+              <%= metar_data %>
+            </div> 
+    </li>
             </ul>
           </div>
           <div class="px-4 my-4 w-full sm:w-auto">
@@ -30,10 +34,10 @@
             </div>
             <ul class="leading-8">
               <li><a href="#" class="hover:text-neutral-900">Heritage Field Airport</a></li>
-              <li><a href="#" class="hover:text-neutral-900">Pitcairn Flight Academy?</a></li>
-              <li><a href="#" class="hover:text-neutral-900">Penn Air Repair Productivity?</a></li>
-              <li><a href="#" class="hover:text-neutral-900">PennJet</a></li>
-              <li><a href="#" class="hover:text-neutral-900">See More</a></li>
+              <li><a href="#" class="hover:text-neutral-900">Pitcairn Flight Academy</a></li>
+              <li><a href="#" class="hover:text-neutral-900">Penn Air Repair</a></li>
+              <li><a href="#" class="hover:text-neutral-900">PennJet Aircraft Management</a></li>
+              
             </ul>
           </div>
           <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
@@ -76,8 +80,8 @@
            
           </div>
           <div class="px-4 w-full text-center sm:w-auto sm:text-left">
-          Copyright © 2023
-          <script>new Date().getFullYear() > 2023 && document.write("- " + new Date().getFullYear())</script>- 2024
+          Copyright © 2023 -2025
+          
           Pitcairn Aviation LLC All Rights Reserved.
           </div>
         </div>

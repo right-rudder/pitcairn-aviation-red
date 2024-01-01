@@ -5,15 +5,17 @@
 
 
 
-<!-- source: https://codepen.io/mfg888/pen/MWVGddj -->
-<header class="w-full bg-oldplane bg-cover h-screen-3/ lg:h-screen-3/4 bg-center flex justify-center items-center">
+
+
+
+<header class="w-full bg-coffeenow bg-cover h-screen-2/4 lg:h-screen-3/4 bg-center flex justify-center items-center">
 <section class="px-3 py-5  lg:py-10 font-header">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-        <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
+        <div class="order-2 lg:order-2 flex flex-col justify-center items-center">
             <p class="text-4xl font-bold md:text-7xl text-red-800">Get UPDATED</p>
-            <p class="text-4xl font-bold md:text-5xl text-gray-900">News, Events and Promos</p>
+            <p class="text-4xl font-bold md:text-5xl text-gray-200">News, Events and Promos</p>
             
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">SUBSCRIBE NOW</button>
+            <button class="text-lg md:text-2xl bg-black text-white py-3 px-10 mt-10 hover:bg-red-600 rounded-xl border-white">Subscribe Now</button>
         </div>
         <div class="order-1 lg:order-2">
        
@@ -24,14 +26,37 @@
 </section>
 </header>
 
+
 <!-- news -->
+
+<section class="flex flex-col lg:flex-row-reverse pt-10 pb-0 lg:py-10 bg-gradient-to-t lg:bg-gradient-to-l from-gray-200 to-gray-300">
+  <div class="flex flex-col items-center lg:w-1/2 p-text">
+    
+    <h3 class="text-5xl font-semibold pb-10 font-header mx-5 text-center py-10">News</h3>
+    
+    <p class="w-3/4 py-2 text-justify">
+    Here, you’ll find that we don’t just offer baseline services to our clients. The Pitcairn Aviation LLC team is dedicated to ensuring you have the best access to events, relevant information in the aviation space, and our extensive community of pilots and aviation professionals.
+    </p>
+    <div class="py-5">
+    <button class="text-lg md:text-2xl bg-black text-white py-3 px-5 mt-10 hover:bg-red-600 rounded-xl border-white">What’s New?</button>
+    </div>
+  </div>
+  <div class="flex flex-col items-center lg:w-1/2">
+    <%=image_tag "coffee-and-newspaper-on-a-desk.webp", alt: "Student pilot taking a discovery flight", class: "lg:h-screen-2/3 lg:rounded-2xl lg:drop-shadow-2xl"%>
+  </div>
+</section>
+
+
+
+<!-- sub events-->
+<section class="bg-gradient-to-t lg:bg-gradient-to-l from-gray-200 to-gray-400">
 
 <ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-                <span class="mb-1 block text-sm leading-6 text-indigo-500">May 10th – 12th 2024</span>3rd Annual Heritage Field (KPTW) Fly-In Arrival and Departure Procedures</h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                <span class="mb-1 block text-sm leading-6 text-red-600">May 10th – 12th 2024</span>3rd Annual Heritage Field (KPTW) Fly-In Arrival and Departure Procedures</h3>
+            <div class="prose prose-slate prose-sm text-black ">
                 <p> <ol class="list-decimal pl-6">
                 
                 <li>3rd Annual Heritage Field (KPTW) Fly-In: May 10-12, 2024. Pilots should expect increased VFR traffic during daylight hours within 10 NM of the airport area during these dates.Participating aircraft may not be equipped with ADS-B or were not originally certificated with an electrical system, or that have not subsequently been certified with such a system installed. </li> </ol></p>
@@ -48,8 +73,8 @@
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-                <span class="mb-1 block text-sm leading-6 text-purple-500">Lorem ipsum</span>Lorem ipsum, Lorem ipsum, Lorem ipsums</h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+                <span class="mb-1 block text-sm leading-6 text-red-600">Lorem ipsum</span>Lorem ipsum, Lorem ipsum, Lorem ipsums</h3>
+            <div class="prose prose-slate prose-sm text-black">
                 <p>Vestibulum dapibus erat vel augue luctus, eget fermentum ligula fermentum. Maecenas vel nunc nec justo fringilla laoreet. Sed at fringilla lectus, nec auctor dui. Vivamus ut sem nec justo eleifend facilisis eu eu sem. </p>
             </div><a
                 class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
@@ -65,9 +90,9 @@
     <li class="relative flex flex-col sm:flex-row xl:flex-col items-start">
         <div class="order-1 sm:ml-6 xl:ml-0">
             <h3 class="mb-1 text-slate-900 font-semibold dark:text-slate-200">
-                <span class="mb-1 block text-sm leading-6 text-cyan-500">Lorem ipsum</span>Lorem ipsum,
+                <span class="mb-1 block text-sm leading-6 text-red-600">Lorem ipsum</span>Lorem ipsum,
                 Lorem ipsum,</h3>
-            <div class="prose prose-slate prose-sm text-slate-600 dark:prose-dark">
+            <div class="prose prose-slate prose-sm text-black">
                 <p>Vestibulum dapibus erat vel augue luctus, eget fermentum ligula fermentum. Maecenas vel nunc nec justo fringilla laoreet. Sed at fringilla lectus, nec auctor dui. Vivamus ut sem nec justo eleifend facilisis eu eu sem. </p>
             </div><a
                 class="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 dark:bg-slate-700 dark:text-slate-100 dark:hover:bg-slate-600 dark:hover:text-white dark:focus:ring-slate-500 mt-6"
@@ -82,6 +107,6 @@
     </li>
 </ul>
 
-
+</section>
 
 <%= render "shared/footer"%>

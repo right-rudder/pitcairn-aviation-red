@@ -27,159 +27,48 @@
 
 
 
-<!--   body-->
+<!--   body1-->
 
-<section class="bg-gray-100">
-<div class="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-        <div class="max-w-lg">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl uppercase">About<span class="text-red-600"> Us</span></h2>
-            <p class="mt-4 text-gray-800 text-lg italic text-justify">Heritage Field started as an airfield in 1928, it was then known as Pottstown-Limerick airport. It received airport licensing from the state in 1931. In 1968 PECO acquired the airport due to its proximity to the planned Limerick nuclear generation plant. PECO contracted with PennAirways to manage the airport. In 2009 Pottstown-Limerick airport and PennAirways were acquired by local business man, avid pilot and vintage aircraft collector John K Desmond Jr and the airport name was changed to Heritage Field.  After Mr Desmond’s passing in 2014 the future of the airport was in limbo until new ownership could be found.
 
-            After 8 long years searching for a buyer, in 2022, Heritage Field was acquired by David & Rachael Pitcairn.  The Pitcairn’s are aviation enthusiasts and David’s family has historical connection to aviation in the Philadelphia region and beyond.  David’s great uncle was Harold F. Pitcairn, the founder of Pitcairn Aircraft Co which manufactured the famed Pitcairn Mailwing used by the US Postal Service coining the term “Air Mail”.  Harold Pitcairn was also the founder of the Pitcairn Flying School and Passenger Service which later became Eastern Airlines.  David’s passion for flying was inspired by Harold but it was fostered by his late father and fellow aviator Laren Pitcairn who would take him to Airshows, build model airplanes and eventually take him flying.  David’s love of aviation is shared by his wife Rachael.  Together they have shared a dream to develop an airport where they could help grow aviation and create a future for themselves and their two sons Theodore and Augustus.
-            
-            Today, Pitcairn Aviation LLC has replaced PennAirways as the FBO and each year Heritage Field hosts a number of events including the annual Fly-in Pancake Breakfast welcoming visitors to the airport for pancakes, airplane rides, vintage aircraft and airplane tours for well over 50 years.</p>
-            <div class="mt-8">
-                <a href="https://en.wikipedia.org/wiki/Pitcairn_Aircraft_Company", target="_blank" class="text-blue-500 hover:text-blue-600 font-medium">Learn more about us
-                    <span class="ml-2">&#8594;</span></a>
-            </div>
-        </div>
-        <div class="mt-12 md:mt-0">
-        <%= image_tag "pilot2.webp",class: "lg:h-screen-2/3 lg:w-4/7 lg:rounded-2xl lg:drop-shadow-2xl"%>
-        </div>
+
+
+<section class="bg-gradient-to-t lg:bg-gradient-to-l from-gray-200 to-gray-300 text-black">
+  <div class="flex flex-col lg:flex-row-reverse lg:items-center pt-10 lg:py-10">
+    <!--Text Section-->
+    <div class="lg:w-1/2 flex flex-col justify-center items-center pb-10">
+      <p class="text-xl lg:text-3xl text-center"></p>
+      <h1 class="font-bold text-3xl lg:text-5xl pt-5 text-center">ABOUT<span class="text-red-600"> US<span></h1>
+      <p class="w-5/6 lg:w-4/5 pt-5  text-lg lg:text-xl p-text text-justify">
+      Pitcairn Aviation  FBO was born out of a dream by founder David Pitcairn. Learn about his beginnings as a pilot and how Pitcairn Aviation evolved from a seedling idea into PennAirways (our former name) and eventually became the FBO you see today.
+      </p>
+      <p class="w-5/6 lg:w-4/5 pt-5 text-left lg:text-left text-lg lg:text-base p-text">
+      
+      </p>
+      <button class="text-lg md:text-2xl bg-black text-white py-3 px-5 mt-10 hover:bg-red-600 rounded-xl border-white">Meet the Pitcairn Team</button>
     </div>
-</div>
-</section>  
+    <div class="lg:w-1/2">
+    
+      <div class="grid place-items-center lg:mx-10">
+        <%= image_tag "meet-the-pitcairn-team.webp" , alt: ": Owner David Pitcairn and team in front of Pitcairn Aviation LLC fleet at Heritage Field Airport", class: "lg:rounded-2xl lg:w-2/3"%>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--   body2-->
+
+
+
+<%= render "shared/history"%>
+
   
 
-<!--  body2 -->
-
-<br>
-<div class="relative bg-gray-50 px-6 pt-16 pb-20 lg:px-8 lg:pt-24 lg:pb-28">
-<div class="absolute inset-0">
-  <div class="h-1/3 bg-white sm:h-2/3"></div>
-</div>
-<div class="relative mx-auto max-w-7xl">
-  <div class="text-center">
-    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Lorem ipsum</h2>
-    <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-      This is your life and it's ending one minute @ a time...</p>
-  </div>
-  <div class="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
-
-    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-      <div class="flex-shrink-0">
-        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
-      </div>
-      <div class="flex flex-1 flex-col justify-between bg-white p-6">
-        <div class="flex-1">
-          <p class="text-sm font-medium text-indigo-600">
-            <a href="#" class="hover:underline">Article</a>
-          </p>
-          <a href="#" class="mt-2 block">
-            <p class="text-xl font-semibold text-gray-900">Boost your conversion rate</p>
-            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.</p>
-          </a>
-        </div>
-        <div class="mt-6 flex items-center">
-          <div class="flex-shrink-0">
-            <a href="#">
-              <span class="sr-only">Roel Aufderehar</span>
-              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
-            </a>
-          </div>
-          <div class="ml-3">
-            <p class="text-sm font-medium text-gray-900">
-              <a href="#" class="hover:underline">Roel Aufderehar</a>
-            </p>
-            <div class="flex space-x-1 text-sm text-gray-500">
-              <time datetime="2020-03-16">Mar 16, 2020</time>
-              <span aria-hidden="true">·</span>
-              <span>6 min read</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-      <div class="flex-shrink-0">
-        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
-      </div>
-      <div class="flex flex-1 flex-col justify-between bg-white p-6">
-        <div class="flex-1">
-          <p class="text-sm font-medium text-indigo-600">
-            <a href="#" class="hover:underline">Video</a>
-          </p>
-          <a href="#" class="mt-2 block">
-            <p class="text-xl font-semibold text-gray-900">How to use search engine optimization to drive sales</p>
-            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi.,
-              tempore temporibus quo laudantium.</p>
-          </a>
-        </div>
-        <div class="mt-6 flex items-center">
-          <div class="flex-shrink-0">
-            <a href="#">
-              <span class="sr-only">Brenna Goyette</span>
-              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
-            </a>
-          </div>
-          <div class="ml-3">
-            <p class="text-sm font-medium text-gray-900">
-              <a href="#" class="hover:underline">Brenna Goyette</a>
-            </p>
-            <div class="flex space-x-1 text-sm text-gray-500">
-              <time datetime="2020-03-10">Mar 10, 2020</time>
-              <span aria-hidden="true">·</span>
-              <span>4 min read</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
-      <div class="flex-shrink-0">
-        <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80" alt="">
-      </div>
-      <div class="flex flex-1 flex-col justify-between bg-white p-6">
-        <div class="flex-1">
-          <p class="text-sm font-medium text-indigo-600">
-            <a href="#" class="hover:underline">Case Study</a>
-          </p>
-          <a href="#" class="mt-2 block">
-            <p class="text-xl font-semibold text-gray-900">Improve your customer experience</p>
-            <p class="mt-3 text-base text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-              harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis
-              perferendis hic.</p>
-          </a>
-        </div>
-        <div class="mt-6 flex items-center">
-          <div class="flex-shrink-0">
-            <a href="#">
-              <span class="sr-only">Daniela Metz</span>
-              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
-            </a>
-          </div>
-          <div class="ml-3">
-            <p class="text-sm font-medium text-gray-900">
-              <a href="#" class="hover:underline">Daniela Metz</a>
-            </p>
-            <div class="flex space-x-1 text-sm text-gray-500">
-              <time datetime="2020-02-12">Feb 12, 2020</time>
-              <span aria-hidden="true">·</span>
-              <span>11 min read</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
+<!-- footer -->
 
 
 <%= render "shared/footer"%>

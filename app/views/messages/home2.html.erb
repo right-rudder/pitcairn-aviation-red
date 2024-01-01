@@ -1,18 +1,14 @@
 <%= render "shared/header" %>
 
+<header class="w-full bg-landing bg-cover h-screen-2/4 lg:h-screen-2/4 bg-center flex justify-center items-center  ">
 
-   
-
-
-<header class="w-full bg-landing bg-cover h-screen-2/4 lg:h-screen-2/4 bg-center flex justify-center items-center">
 <section class="px-3 py-5  lg:py-10 font-header">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
             <p class="text-4xl font-bold md:text-7xl text-red-600">Welcome to </p>
-            <p class="text-4xl font-bold md:text-6xl uppercase text-gray-900">Pitcairn Aviation</p>
-            <p class="mt-2 text-sm md:text-lg text-center">Your trusted Fixed-Base Operator (FBO) at Heritage Field Airport, serving the Pottstown, PA area.
-            Reach our team at (610) 495-7000.</p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">Shop Now</button>
+            <p class="text-4xl font-bold md:text-6xl uppercase text-red-600">Pitcairn Aviation</p>
+            <p class="mt-2 text-sm md:text-lg text-center">Your trusted Fixed-Base Operator at Heritage Field Airport (KPTW), serving the greater Pottstown, PA, area</p>
+            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl">Contact Us</button>
         </div>
         <div class="order-1 lg:order-2">
        
@@ -25,385 +21,72 @@
 
 <!--   body-->
 
-<!--    services -->
-<br>
-      
-<h3 class="text-3xl font-semibold pb-10 font-header mx-5 text-center">OUR COMPREHENSIVE SERVICES</h3>
 
-<div class="flex flex-wrap gap-4 p-3 justify-center text-lg font-serif">
-    <a href="#"
-        class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12">
-          •	Self-Serve Convenience
+<!--fbo-->
+<section class="mt-20 justify-center items-center">
+<div class="relative overflow-hidden bg-white">
+    <div class="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
+      <div class="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
+        <div class="sm:max-w-lg">
+          <h1 class="font text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">A Full-Service FBO </h1> <h1 class="font text-4xl font-bold tracking-tight  sm:text-6xl"><span class="text-red-700">for Your Fleet<span></h1>
+          <p class="mt-4 text-xl text-gray-700 text-justify">Coming from humble roots, Pitcairn Aviation LLC (formerly PennAirways) has evolved with the support of its valued clients to encompass end-to-end services for aircraft coming to and from Heritage Field Airport (KPTW). Pitcairn Aviation LLC’s FBO is here to help make your flight plans easy with hangar rentals, full-service fueling, on-site assistance, and business spaces.</p>
 
-        <div class="text-gray-500 font-thin text-sm pt-1">
-            <span>Hassle-free refueling with our AvGas pump</span>
-           
+         
         </div>
-      </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Full-Service Fueling
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Reliable refueling with Phillips 66 Branded Fuel.</span>
-          
+        <div class="mt=10">
+        <button class="btn-primary border border-white bg-black py-3 px-5 mt-10 hover:bg-red-600 text-xl text-white font-bold rounded-2xl" >
+        <%= link_to "Explore Our Services", 'services',class: "hover:text-white"%>
+        </button>
         </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Overnight Hangar and Tie-down
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Secure aircraft storage options.</span>
-           
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Hangar Rentals
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Long-term housing solutions for your aircraft</span>
-            
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Convenience at Your Fingertips
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Access to crew cars and rental cars</span>
-          
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Meeting and Rest Facilities
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Conference rooms and quiet spaces </span>
-           
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Enhanced Security
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Fenced airfield gate access and secure parking</span>
-           
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	On-Site Assistance
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Ground power start and jump start services.</span>
-           
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        Other Services
-        <div class="text-gray-500 font-thin text-sm">
-            <span>For more details ask our Staff</span>
-            
-        </div>
-    </a>
-</div>
-
-
-<!-- fuel services -->
-
-
-            
-<!-- fuel -->
-
-
-<<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-4 pb-4 pt-2 max-w-sm mx-auto mt-5">
-<%= image_tag "pitcairn-aviation-phillips66.webp", class: "", alt: ""%>
-</article>
-
-
-<h3 class="text-3xl font-semibold pt-5 font-header mx-5 text-center">FUEL PRICES</h3>
-
-
-
-<div class="w-screen h-full dark:bg-gray-700">
-  <div class="flex justify-center flex-wrap">
-    
-  <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-5 dark:shadow-blue-900">
-      <div class="flex flex-col items-center md:items-start px-6 py-4">
-        <div class="flex flex-col w-26">
-          <h2 class="font-bold text-xl dark:text-gray-100">FULL SERVICE</h2>
-          <div class="border-2 border-red-500 mb-3 text"></div>
-        </div>
-        <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-        <h3 class="font-bold text-3xl dark:text-gray-100"><%= number_to_currency(latest_fuel_price.ll_full_service, precision: 2) %></h3>
-        </div>
-        <div class="flex flex-col w-26">
-        <h2 class="font-bold text-xl dark:text-gray-100">SELF SERVICE</h2>
-        <div class="border-2 border-red-500 mb-3 text"></div>
-      </div>
-      <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-      <h3 class="font-bold text-3xl dark:text-gray-100"> <%= number_to_currency(latest_fuel_price.ll_self_service, precision: 2) %></h3>
-      </div>
-      </div>
-
-      <div class="flex flex-col items-center md:items-start bg-gray-300 px-6 py-3 rounded-lg ">
-        <h2 class="font-bold text-4xl mb-2">100 LL</h2>
-        <p class="text-gray-600 dark:text-gray-600 text-xl">Fuel Type</p>
-       
-      </div>
-    </div>
-    
-    <% if (latest_fuel_price) %>
-    <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-5 dark:shadow-blue-900">
-      <div class="flex flex-col items-center md:items-start px-6 py-4">
-        <div class="flex flex-col w-26">
-          <h2 class="font-bold text-xl dark:text-gray-100">FULL SERVICE</h2>
-          <div class="border-2 border-red-500 mb-3 text"></div>
-        </div>
-        <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-        <h3 class="font-bold text-3xl dark:text-gray-100"><%= number_to_currency(latest_fuel_price.jet_a_full_service, precision: 2) %></h3>
-        </div>
-        <div class="flex flex-col w-26">
-        <h2 class="font-bold text-xl dark:text-gray-100">SELF SERVICE</h2>
-        <div class="border-2 border-red-500 mb-3 text"></div>
-      </div>
-      <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-      <h3 class="font-bold text-3xl dark:text-gray-100"> <%= number_to_currency(latest_fuel_price.jet_a_self_service, precision: 2) %></h3>
-      </div>
-      </div>
-
-      <div class="flex flex-col items-center md:items-start bg-gray-300 px-6 py-3 rounded-lg dark:bg-blue-100">
-        <h2 class="font-bold text-4xl mb-2">Jet A</h2>
-        <p class="text-gray-600 dark:text-gray-600 text-xl">Fuel Type</p>
+        <div>
+          <div class="mt-10">
+            <!-- Decorative image grid -->
+            <div aria-hidden="true" class="pointer-events-none lg:absolute lg:inset-y-0 lg:mx-auto lg:w-full lg:max-w-7xl">
+              <div class="absolute transform sm:left-1/2 sm:top-0 sm:translate-x-8 lg:left-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-8">
+                <div class="flex items-center space-x-6 lg:space-x-8">
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
+                    <%= image_tag "plane-pilot.webp" , class:"h-full w-full object-cover object-center"%>
         
-      </div>
-      
-    </div>
-
-  
-
-  </div>
-  <div class="flex flex-col w-26 items-center justify-items-center">
-        
-        <p class="text-gray-600 dark:text-gray-600 mb-12 text-xl font-semibold italic"> <strong>Last Update on:</strong>
-        <%= latest_fuel_price.updated_at.strftime("%Y-%m-%d") %></p>
-
-        <% else %>
-<p>No fuel prices available.</p>
-<% end %>
-       
-      </div>
-  
-</div>
-
-<!-- image -->
-
-<h3 class="text-3xl font-semibold pt-5 font-header mx-5 text-center">CAR <span class="text-red-600">RENTAL<span></h3>
-
-        <div class="flex flex-col lg:flex-row max-w-4xl mx-auto mb-10">
-          <div class="lg:w-1/2 flex flex-col items-center">
-            <p class="pt-5 px-10 pb-10 lg:pb-0">
-            At Pitcairn Aviation, we understand the importance of convenience for our clients, which is why we offer <span class="font-bold text-red-600">on site</span> Enterprise Car Rental services right at our facility. 
-            Whether you're arriving or departing from Heritage Field (KPTW), our partnership with Enterprise ensures that you have easy access to rental cars, allowing for seamless transitions between your flight and ground transportation. 
-            In addition to Enterprise, we also work with Hertz and Avis to provide an even broader range of options. While Hertz and Avis aren't on site, they are able to deliver your rental vehicle to our location.
-            </p>
-          </div>
-          <div class="lg:w-1/2 flex flex-col items-center justify-center">
-            <%= link_to "https://www.enterprise.com/en/car-rental-locations/us/pa/limerick-572l.html", target: "blank" do%>
-              <%= image_tag "pitcairn-aviation-enterprise.webp", class: "w-96 hover:scale-105 duration-300", alt: "Enterprise Car Rental logo"%>
-            <%end%>
-            Enterprise is onsite at the airport
-            <div class="flex gap-10 pt-10">
-              <%= link_to "https://www.hertz.com/rentacar/reservation/", target: "blank" do%>
-                <%= image_tag "pitcairn-aviation-hertz.webp", class: "w-32 hover:scale-105 duration-300", alt: "Hertz Car Rental logo"%>
-              <%end%>
-              <%= link_to "https://www.avis.com/en/home", target: "blank" do%>
-                <%= image_tag "pitcairn-aviation-avis.webp", class: "w-32 hover:scale-105 duration-300", alt: "Avis Car Rental logo"%>
-              <% end %>
-            </div>
-            <p class="text-center max-w-sm">
-              Hertz and Avis services are available can deliver rental cars to the airport
-            </p>
-          </div>
-        </div>
-
-<!--test hnby -->
-
-<div
-    class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-300  sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
-    <div class="mx-auto px-5">
-        <div class="flex flex-col items-center">
-            <h2 class="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">HOTEL <span class="text-red-600">NEARBY<span></h2>
                     </div>
-        <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
-            <div class="py-5">
-                <details class="group">
-                    <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                        <span> locations..</span>
-                        <span class="transition group-open:rotate-180">
-                                <svg fill="none" height="24" shape-rendering="geometricPrecision"
-                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="1.5" viewBox="0 0 24 24" width="24">
-                                    <path d="M6 9l6 6 6-6"></path>
-                                </svg>
-                            </span>
-                    </summary>
-                    
-                    <div class="flex flex-col p-6 border-t border-gray-300 bg-gray-100">
-      <div class="flex-1 inline-flex items-center mb-3">
-        <div class="bg-red-600 mr-3 p-1 rounded-full">
-          <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-          </svg>
-        </div>
-        <p class="text-sm-2">
-        <%= link_to "HAMPTON INN LIMERICK-PHILADELPHIA, PA	2.9 mi", "https://www.airnav.com/hotel/HAMPTON_INN_LIMERICK-PHILADELPHIA_PA?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-        
-        </p>
-      </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <%= image_tag "plane-wings.webp" , class:"h-full w-full object-cover object-center"%>
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <%= image_tag "refill-gas.webp" , class:"h-full w-full object-cover object-center"%>
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <%= image_tag "meeting.webp" , class:"h-full w-full object-cover object-center"%>
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                     
+                    </div>
+                  </div>
+                  <div class="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <%= image_tag "plane-garage.webp" , class:"h-full w-full object-cover object-center"%>
+                    </div>
+                    <div class="h-64 w-44 overflow-hidden rounded-lg">
+                    <%= image_tag "plane-park.webp" , class:"h-full w-full object-cover object-center"%>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div class="mb-20">
 
-      <div class="flex-1 inline-flex items-center mb-3">
-        <div class="bg-red-600 mr-3 p-1 rounded-full">
-          <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-          </svg>
-        </div>
-        <p class="text-sm-2">
-        <%= link_to "HOLIDAY INN EXPRESS & SUITES LIMERICK - POTTSTOWN	3.3 mi", "https://www.airnav.com/hotel/HOLIDAY_INN_EXPRESS_SUITES_LIMERICK-POTTSTOWN?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-        
-        </p>
-      </div>
-
-      <div class="flex-1 inline-flex items-center mb-3">
-      <div class="bg-red-600 mr-3 p-1 rounded-full">
-        <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-        </svg>
-      </div>
-      <p class="text-sm-2">
-      
-      <%= link_to "BEST WESTERN PLUS EXECUTIVE RESIDENCY POTTSTOWN	3.8 mi", "https://www.airnav.com/hotel/BEST_WESTERN_PLUS_EXECUTIVE_RESIDENCY_POTTSTOWN?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-      
-      
-      </p>
-    </div>
-
-    <div class="flex-1 inline-flex items-center mb-3">
-    <div class="bg-red-600 mr-3 p-1 rounded-full">
-      <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-      </svg>
-    </div>
-    <p class="text-sm-2">
-    
-    <%= link_to "THE ROYAL WORTHINGTON	5.5 mi", "https://www.airnav.com/hotel/THE_ROYAL_WORTHINGTON?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-    
-    </p>
-  </div>
-
-  <div class="flex-1 inline-flex items-center mb-3">
-  <div class="bg-red-600 mr-3 p-1 rounded-full">
-    <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-    </svg>
-  </div>
-  <p class="text-sm-2">
-  <%= link_to "STAYBRIDGE STES VALLEY FORGE	5.8 mi", "https://www.airnav.com/hotel/STAYBRIDGE_STES_VALLEY_FORGE?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-    
-  </p>
-</div>
-
-
-<div class="flex-1 inline-flex items-center mb-3">
-  <div class="bg-red-600 mr-3 p-1 rounded-full">
-    <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-    </svg>
-  </div>
-  <p class="text-sm-2">
-  <%= link_to "DAYS INN BY WYNDHAM POTTSTOWN	6.6 mi", "https://www.airnav.com/hotel/DAYS_INN_BY_WYNDHAM_POTTSTOWN?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-    
-  </p>
-</div>
-
-<div class="flex-1 inline-flex items-center mb-3">
-  <div class="bg-red-600 mr-3 p-1 rounded-full">
-    <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-    </svg>
-  </div>
-  <p class="text-sm-2">
-  <%= link_to "AMERICAS BEST VALUE INN POTTSTOWN	6.9 mi", "https://www.airnav.com/hotel/AMERICAS_BEST_VALUE_INN_POTTSTOWN?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-    
-  
-  </p>
-</div>
-
-<div class="flex-1 inline-flex items-center mb-3">
-  <div class="bg-red-600 mr-3 p-1 rounded-full">
-    <svg class="h-3 w-3 text-white fill-current" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <polygon points="0 11 2 9 7 14 18 3 20 5 7 18"></polygon>
-    </svg>
-  </div>
-  <p class="text-sm">
-  <%= link_to "FAIRFIELD BY MARRIOTT INN AND SUITES POTTSTOWN LIMERICK	7.1 mi", "https://www.airnav.com/hotel/FAIRFIELD_BY_MARRIOTT_INN_AND_SUITES_POTTSTOWN_LIMERICK?near=KPTW-PITCAIRN",target: "_blank", class: "hover:text-red-500"%>
-    
-  </p>
-</div>
-      
-                </details>
            
-            </div>
-        </div>
-    </div>
-</div>
-<!-- -->
-
-
-<!-- company -->
-
-<h3 class="text-3xl font-semibold pt-5 font-header mx-5 mb-12 text-center uppercase">Companies <span class="text-red-600">On The Field</span></h3>
-
-        <div class="flex flex-col gap-10 lg:flex-row max-w-4xl px-5 mx-auto mb-10">
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "pitcairn-flight-logo-500.webp", class: "", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Flight training by Pitcairn Flight LLC.  Learn how to fly and rent aircraft.
-              </p>
-              <%= link_to "https://pitcairnflightacademy.com", target: "blank" do%>
-                <div class="btn-primary text-sm">Pitcairn Flight</div>
-              <% end %>
-            </div>
-          </div>
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "penn-air-logo-250.webp", class: "h-16", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Aircraft maintenance and inspection by Penn Air Repair LLC.
-              </p>
-              <%= link_to "", target: "blank" do%>
-                <div class="btn-primary text-sm">Penn Air Repair</div>
-              <% end %>
-            </div>
-          </div>
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "penn-jet-logo-250.webp", class: "", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Aircraft management and private charter by PennJet LLC.
-              </p>
-              <%= link_to "", target: "blank" do%>
-                <div class="btn-primary text-sm">PennJet</div>
-              <% end %>
-            </div>
           </div>
         </div>
-
-        <div class="text-center mt-8 w-3/4 mx-auto">
-        <p class="text-lg text-gray-700">At Pitcairn Aviation LLC, we're more than just an FBO. We're your aviation partner. Contact us today at (610) 495-7000 to learn more about our services and get in touch.</p>
       </div>
+    </div>
+  </div>
 
+<!-- eee -->
 
-<%= render "shared/visit_fbo"%>
+</section>
+
 
 
 <%= render "shared/footer"%>

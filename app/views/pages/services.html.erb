@@ -5,15 +5,14 @@
    
 </div>
 
-<header class="w-full bg-repair bg-cover h-screen-2/4 lg:h-screen-2/4 bg-center flex justify-center items-center">
+<header class="w-full bg-repair bg-cover h-screen-2/4 lg:h-screen-3/4 bg-center flex justify-center items-center">
 <section class="px-3 py-5  lg:py-10 font-header">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
         <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
-            <p class="text-4xl font-bold md:text-7xl text-white">Get to KNOW</p>
-            <p class="text-4xl font-bold md:text-6xl uppercase text-gray-900">OUR SERVICES</p>
-            <p class="mt-2 text-sm md:text-lg text-center">Your trusted Fixed-Base Operator (FBO) at Heritage Field Airport, serving the Pottstown, PA area.
-            Reach our team at (610) 495-7000.</p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-zinc-800">INQUIRE NOW</button>
+            <p class="text-4xl font-bold md:text-7xl text-black">OUR SERVICES</p>
+            
+            <p class="mt-2 text-sm md:text-2xl  text-center">Full-range offerings for your aircraft and, equally important, for your flight experience </p>
+            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl">Get in Touch</button>
         </div>
         <div class="order-1 lg:order-2">
        
@@ -26,6 +25,8 @@
 
 
 
+<%= render "shared/cta_services"%>
+
 <!--    services -->
 <br>
       
@@ -34,114 +35,93 @@
 <div class="flex flex-wrap gap-4 p-3 justify-center text-lg font-serif">
     <a href="#"
         class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12">
-          •	Self-Serve Convenience
+          •Self-Serve Fueling
 
         <div class="text-gray-500 font-thin text-sm pt-1">
-            <span>Hassle-free refueling with our AvGas pump</span>
+            <span>Hassle-free AvGas pumps with reliable Phillips 66 fueling options</span>
            
         </div>
       </a>
     <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
         href="#">
-        •	Full-Service Fueling
+        •		Hangar Services
         <div class="text-gray-500 font-thin text-sm">
-            <span>Reliable refueling with Phillips 66 Branded Fuel.</span>
+            <span>Tiedowns and hangar rentals with overnight and long-term storage solutions </span>
           
         </div>
     </a>
     <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
         href="#">
-        •	Overnight Hangar and Tie-down
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Secure aircraft storage options.</span>
-           
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Hangar Rentals
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Long-term housing solutions for your aircraft</span>
-            
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Convenience at Your Fingertips
+        •	Going Beyond
         <div class="text-gray-500 font-thin text-sm">
             <span>Access to crew cars and rental cars</span>
-          
-        </div>
-    </a>
-    <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
-        href="#">
-        •	Meeting and Rest Facilities
-        <div class="text-gray-500 font-thin text-sm">
-            <span>Conference rooms and quiet spaces </span>
            
         </div>
     </a>
     <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
         href="#">
-        •	Enhanced Security
+        • Business and Rest Facilities
         <div class="text-gray-500 font-thin text-sm">
-            <span>Fenced airfield gate access and secure parking</span>
-           
+            <span>Conference rooms, quiet spaces, and other companies on the base</span>
+            
         </div>
     </a>
     <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
         href="#">
         •	On-Site Assistance
         <div class="text-gray-500 font-thin text-sm">
-            <span>Ground power start and jump start services.</span>
-           
+            <span>Ground power and jump-start services</span>
+          
         </div>
     </a>
     <a class="bg-gray-100 flex-grow text-black border-l-8 border-red-500 rounded-md px-3 py-2 w-full md:w-5/12 lg:w-3/12"
         href="#">
-        Other Services
+        •	Top-Line Security
         <div class="text-gray-500 font-thin text-sm">
-            <span>For more details ask our Staff</span>
-            
+            <span>Fenced airfield gate access and secure parking</span>
+           
         </div>
     </a>
+    
+    
+    
 </div>
 
-
-<!-- fuel services -->
 
 
             
 <!-- fuel -->
+<% if (latest_fuel_price) %>
 
-
-<<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-4 pb-4 pt-2 max-w-sm mx-auto mt-5">
+<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-4 pb-4 pt-2 max-w-sm mx-auto mt-5">
 <%= image_tag "pitcairn-aviation-phillips66.webp", class: "", alt: ""%>
 </article>
 
-
+<div class="flex flex-col w-26 items-center justify-items-center">
 <h3 class="text-3xl font-semibold pt-5 font-header mx-5 text-center">FUEL PRICES</h3>
+<p class="text-gray-600 dark:text-gray-600 mb-12 text-sm font-semibold italic"> <strong>Last Update on:</strong>
+<%= latest_fuel_price.updated_at.strftime("%Y-%m-%d") %></p>
+</div>
 
 
-
-<div class="w-screen h-full dark:bg-gray-700">
+<div class="w-screen h-full bg-gray-700">
   <div class="flex justify-center flex-wrap">
     
-  <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-5 dark:shadow-blue-900">
-      <div class="flex flex-col items-center md:items-start px-6 py-4">
+  <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-8 dark:shadow-blue-900">
+      <div class="flex flex-col items-center md:items-start px-6 py-5">
         <div class="flex flex-col w-26">
-          <h2 class="font-bold text-xl dark:text-gray-100">FULL SERVICE</h2>
+          <h2 class="font-bold text-xl text-white">FULL SERVICE</h2>
           <div class="border-2 border-red-500 mb-3 text"></div>
         </div>
-        <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-        <h3 class="font-bold text-3xl dark:text-gray-100"><%= number_to_currency(latest_fuel_price.ll_full_service, precision: 2) %></h3>
+        <div class="text-gray-500 dark:text-white text-center md:text-start">
+        <h3 class="font-bold text-3xl text-white"><%= number_to_currency(latest_fuel_price.ll_full_service, precision: 2) %></h3>
         </div>
         <div class="flex flex-col w-26">
-        <h2 class="font-bold text-xl dark:text-gray-100">SELF SERVICE</h2>
+        <h2 class="font-bold text-xl text-white">SELF SERVICE</h2>
         <div class="border-2 border-red-500 mb-3 text"></div>
       </div>
       <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-      <h3 class="font-bold text-3xl dark:text-gray-100"> <%= number_to_currency(latest_fuel_price.ll_self_service, precision: 2) %></h3>
+      <h3 class="font-bold text-3xl text-white"> <%= number_to_currency(latest_fuel_price.ll_self_service, precision: 2) %></h3>
       </div>
       </div>
 
@@ -152,22 +132,22 @@
       </div>
     </div>
     
-    <% if (latest_fuel_price) %>
-    <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-5 dark:shadow-blue-900">
-      <div class="flex flex-col items-center md:items-start px-6 py-4">
+  
+    <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-8 dark:shadow-blue-900">
+      <div class="flex flex-col items-center md:items-start px-6 py-5">
         <div class="flex flex-col w-26">
-          <h2 class="font-bold text-xl dark:text-gray-100">FULL SERVICE</h2>
+          <h2 class="font-bold text-xl text-white">FULL SERVICE</h2>
           <div class="border-2 border-red-500 mb-3 text"></div>
         </div>
         <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-        <h3 class="font-bold text-3xl dark:text-gray-100"><%= number_to_currency(latest_fuel_price.jet_a_full_service, precision: 2) %></h3>
+        <h3 class="font-bold text-3xl text-white"><%= number_to_currency(latest_fuel_price.jet_a_full_service, precision: 2) %></h3>
         </div>
         <div class="flex flex-col w-26">
-        <h2 class="font-bold text-xl dark:text-gray-100">SELF SERVICE</h2>
+        <h2 class="font-bold text-xl text-white">SELF SERVICE</h2>
         <div class="border-2 border-red-500 mb-3 text"></div>
       </div>
       <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
-      <h3 class="font-bold text-3xl dark:text-gray-100"> <%= number_to_currency(latest_fuel_price.jet_a_self_service, precision: 2) %></h3>
+      <h3 class="font-bold text-3xl text-white"> <%= number_to_currency(latest_fuel_price.jet_a_self_service, precision: 2) %></h3>
       </div>
       </div>
 
@@ -184,16 +164,18 @@
   </div>
   <div class="flex flex-col w-26 items-center justify-items-center">
         
-        <p class="text-gray-600 dark:text-gray-600 mb-12 text-xl font-semibold italic"> <strong>Last Update on:</strong>
-        <%= latest_fuel_price.updated_at.strftime("%Y-%m-%d") %></p>
+        <p class="text-gray-600 dark:text-gray-600 mb-12 text-xl font-semibold italic"></p>
 
         <% else %>
-<p>No fuel prices available.</p>
+<p class="text-gray-600 dark:text-gray-600 mb-12 text-xl font-semibold italic">No fuel prices available.</p>
 <% end %>
        
       </div>
   
 </div>
+
+
+
 
 <!-- image -->
 
@@ -202,7 +184,7 @@
         <div class="flex flex-col lg:flex-row max-w-4xl mx-auto mb-10">
           <div class="lg:w-1/2 flex flex-col items-center">
             <p class="pt-5 px-10 pb-10 lg:pb-0">
-            At Pitcairn Aviation, we understand the importance of convenience for our clients, which is why we offer <span class="font-bold text-red-600">on site</span> Enterprise Car Rental services right at our facility. 
+            At Pitcairn Aviation, we understand the importance of convenience for our clients, which is why we offer on site Enterprise Car Rental services right at our facility. 
             Whether you're arriving or departing from Heritage Field (KPTW), our partnership with Enterprise ensures that you have easy access to rental cars, allowing for seamless transitions between your flight and ground transportation. 
             In addition to Enterprise, we also work with Hertz and Avis to provide an even broader range of options. While Hertz and Avis aren't on site, they are able to deliver your rental vehicle to our location.
             </p>
@@ -227,7 +209,7 @@
         </div>
 
 
-        <!--test hnby -->
+        <!--hotel -->
 
         <div
             class="relative w-full bg-white px-6 pt-10 pb-8 mt-8 shadow-xl ring-1 ring-gray-300 sm:mx-auto sm:max-w-2xl sm:rounded-lg sm:px-10">
@@ -239,7 +221,7 @@
                     <div class="py-5">
                         <details class="group">
                             <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
-                                <span> locations..</span>
+                            <span class="text-red-600 text-xl uppercase font-bold"> locations:</span>
                                 <span class="transition group-open:rotate-180">
                                         <svg fill="none" height="24" shape-rendering="geometricPrecision"
                                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -361,51 +343,52 @@
         
 
 
-<!-- company -->
+        <!-- company -->
+<section>
+        <h3 class="text-3xl font-semibold pt-20 font-header mx-5 mb-12 text-center uppercase">Companies <span class="text-red-600">On The Field</span></h3>
+        
+                <div class="flex flex-col gap-10 lg:flex-row max-w-4xl px-5 mx-auto mb-10">
+                  <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
+                    <%= image_tag "pitcairn-flight-logo-500.webp", class: "", alt: ""%>
+                    <div class="flex flex-col">
+                      <p class="py-5">
+                        Flight training by Pitcairn Flight.  Learn how to fly and rent aircraft.
+                      </p>
+                      <%= link_to "https://pitcairnflightacademy.com", target: "blank" do%>
+                        <div class= "btn-primary border border-white bg-black hover:bg-red-600 text-sm text-white font-bold rounded-2xl">Pitcairn Flight</div>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
+                    <%= image_tag "penn-air-logo-250.webp", class: "h-16", alt: ""%>
+                    <div class="flex flex-col">
+                      <p class="py-5">
+                        Aircraft maintenance and inspection by Penn Air Repair.
+                      </p>
+                      <%= link_to "", target: "blank" do%>
+                        <div class="btn-primary border border-white bg-black hover:bg-red-600  text-sm text-white font-bold rounded-2xl">Penn Air Repair</div>
+                      <% end %>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
+                    <%= image_tag "penn-jet-logo-250.webp", class: "", alt: ""%>
+                    <div class="flex flex-col">
+                      <p class="py-5">
+                        Aircraft management and private charter by PennJet.
+                      </p>
+                      <%= link_to "", target: "blank" do%>
+                        <div class="btn-primary border border-white bg-black hover:bg-red-600  text-sm text-white font-bold rounded-2xl">PennJet</div>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="text-center mt-8 w-3/4 mx-auto">
+                <p class="text-lg text-gray-700"> </p>
+              </div>
+        
 
-<h3 class="text-3xl font-semibold pt-5 font-header mx-5 mb-12 text-center uppercase">Companies <span class="text-red-600">On The Field</span></h3>
-
-        <div class="flex flex-col gap-10 lg:flex-row max-w-4xl px-5 mx-auto mb-10">
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "pitcairn-flight-logo-500.webp", class: "", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Flight training by Pitcairn Flight LLC.  Learn how to fly and rent aircraft.
-              </p>
-              <%= link_to "https://pitcairnflightacademy.com", target: "blank" do%>
-                <div class="btn-primary text-sm">Pitcairn Flight</div>
-              <% end %>
-            </div>
-          </div>
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "penn-air-logo-250.webp", class: "h-16", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Aircraft maintenance and inspection by Penn Air Repair LLC.
-              </p>
-              <%= link_to "", target: "blank" do%>
-                <div class="btn-primary text-sm">Penn Air Repair</div>
-              <% end %>
-            </div>
-          </div>
-          <div class="lg:w-1/3 flex flex-col justify-between items-center border rounded-2xl shadow-2xl pt-5 px-10 pb-5 hover:scale-105 duration-300">
-            <%= image_tag "penn-jet-logo-250.webp", class: "", alt: ""%>
-            <div class="flex flex-col">
-              <p class="py-5">
-                Aircraft management and private charter by PennJet LLC.
-              </p>
-              <%= link_to "", target: "blank" do%>
-                <div class="btn-primary text-sm">PennJet</div>
-              <% end %>
-            </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-8 w-3/4 mx-auto">
-        <p class="text-lg text-gray-700">At Pitcairn Aviation LLC, we're more than just an FBO. We're your aviation partner. Contact us today at (610) 495-7000 to learn more about our services and get in touch.</p>
-      </div>
-
-
+</section>
 
       <!-- chat -->
       

@@ -143,6 +143,13 @@ module.exports = {
         'thumbs' : "url('thumbs-up-in-front-of-cessna.webp')",
         'behind' : "url('behind-pic.webp')",
         'landing' : "url('landing1.webp')",
+        'repair' : "url('repair-aviation.webp')",
+        'airplanePA' : "url('PitcairnPA.webp')",
+        'flyplane' : "url('fly-plane.webp')",
+        'oldplane' : "url('old_plane.webp')",
+        'pilotinfo' : "url('black-car-and-airplane-parked-outside.webp')",
+        'coffeenow' : "url('coffee-and-newspaper-on-a-desk.webp')",
+
       },
       height: theme => ({
         'screen-1/2': '50vh',
