@@ -149,6 +149,7 @@ module.exports = {
         'oldplane' : "url('old_plane.webp')",
         'pilotinfo' : "url('black-car-and-airplane-parked-outside.webp')",
         'coffeenow' : "url('coffee-and-newspaper-on-a-desk.webp')",
+        'owner-founder' : "url('David-Pitcairn-founder-owner-1.webp')",
 
       },
       height: theme => ({

@@ -1,7 +1,7 @@
 
 
 <!-- footer-->
-
+<% if (latest_fuel_price) %>
 <footer>
     <div class="bg-gray-600 py-4 text-white">
       <div class="container px-4 mx-auto">
@@ -17,10 +17,10 @@
               <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-white">KPTW - Heritage Field Airport</h2>
             </div>
             <ul class="leading-8">
-              <li><a href="#" class="hover:text-neutral-900">3310 W Ridge Pike</a></li>
-              <li><a href="#" class="hover:text-neutral-900">Pottstown, PA 19464</a></li>
-              <li><a href="#" class="hover:text-neutral-900">(610) 495-7000</a></li>
-              <li><a href="#" class="hover:text-neutral-900">info@pitcairnaviation.com</a></li>
+              <li>3310 W Ridge Pike</li>
+              <li>Pottstown, PA 19464</li>
+              <li>(610) 495-700</li>
+              <li>info@pitcairnaviation.com</li>
               <li><div class="max-w-xs mx-auto mt-5">
               <% metar_data = fetch_metar_data %>
               <%= metar_data %>
@@ -33,12 +33,14 @@
               <h2 class="inline-block text-2xl pb-4 mb-4 border-b-4 border-white">Companies On The Field</h2>
             </div>
             <ul class="leading-8">
-              <li><a href="#" class="hover:text-neutral-900">Heritage Field Airport</a></li>
-              <li><a href="#" class="hover:text-neutral-900">Pitcairn Flight Academy</a></li>
-              <li><a href="#" class="hover:text-neutral-900">Penn Air Repair</a></li>
-              <li><a href="#" class="hover:text-neutral-900">PennJet Aircraft Management</a></li>
-              
-            </ul>
+              <li><%= link_to "Heritage Field Airport", "http://heritagefield.org/", target: "_blank", class: "hover:text-black"%></li>
+              <li><%= link_to "Pitcairn Flight Academy", "https://pitcairnflightacademy.com",target: "_blank", class: "hover:text-black"%></li>
+              <li> Penn Air Repair</li>
+              <li>PennJet Aircraft Management</li>
+             
+              </ul>
+             
+
           </div>
           <div class="px-4 my-4 w-full sm:w-auto xl:w-1/5">
             <div>
@@ -69,10 +71,69 @@
                 <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
               </svg>
             </a>
+
+<!-- fuel -->
+            <div class="flex flex-col-reverse lg:flex-row max-w-3xl mt-1 mx-auto  items-center w-full">
+  
+            <div class="lg:w-3/3 flex flex-col items-center">
+            <table class="w-max-50 text-sm text-left text-black border">
+            <p class="font-semibold text-white uppercase"> fuel price</p>
+      <thead class="text-xs text-white uppercase">
+        <tr>
+          <th scope="col" class="px-4 py-2">
+            Fuel Type
+          </th>
+          <th scope="col" class="px-4 py-2">
+            Full Service
+          </th>
+          <th scope="col" class="px-4 py-2">
+            Self Service
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="bg-red-500 border-b">
+          <th scope="row" class="px-4 py-2 font-medium text-white whitespace-nowrap">
+            100 LL
+          </th>
+          <td class="px-4 py-2  text-white">
+          <%= number_to_currency(latest_fuel_price.ll_full_service, precision: 2) %>
+          </td>
+          <td class="px-4 py-2  text-white">
+          <%= number_to_currency(latest_fuel_price.ll_self_service, precision: 2) %>
+          </td>
+        </tr>
+        <tr class="bg-gray-300">
+          <th scope="row" class="px-4 py-2 font-medium text-black whitespace-nowrap">
+            Jet A
+          </th>
+          <td class="px-4 py-2">
+          <%= number_to_currency(latest_fuel_price.jet_a_full_service, precision: 2) %>
+          </td>
+          <td class="px-4 py-2">
+          <%= number_to_currency(latest_fuel_price.jet_a_self_service, precision: 2) %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="text-white  mb-12 text-xs  italic"> Last Update on:
+<%= latest_fuel_price.updated_at.strftime("%m-%d-%Y") %></p>
+    <% else %>
+<p class="text-white text-xs italic">No fuel prices available.</p>
+<% end %>
+    </div>
+    </div>
+<!-- fuel -->
           </div>
+
+<!-- fuel -->
+        
+        
+
         </div>
       </div>
     </div>
+    
     <div class="bg-red-700 py-4 text-gray-100">
       <div class="container mx-auto px-4">
         <div class="-mx-4 flex flex-wrap justify-between">
@@ -80,7 +141,7 @@
            
           </div>
           <div class="px-4 w-full text-center sm:w-auto sm:text-left">
-          Copyright © 2023 -2025
+          Copyright © 2023-2025
           
           Pitcairn Aviation LLC All Rights Reserved.
           </div>

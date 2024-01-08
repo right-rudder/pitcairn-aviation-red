@@ -1,3 +1,9 @@
+<%# Head / Meta Data %>
+<% title("Home | Pitcairn Aviation LLC") %>
+<% meta_description("Welcome to Pitcairn Aviation LLC, your trusted FBO at Heritage Field Airport (KPTW), serving the greater Pottstown, PA area. Discover end-to-end aviation services, from hangar rentals to full-service fueling. Contact us for seamless flight planning!") %>
+<% meta_keywords("Pitcairn Aviation LLC, FBO, fixed-base operator, Heritage Field Airport, KPTW, Pottstown, hangar rentals, full-service fueling, flight planning, aviation services, NW Philly, Pennsylvania") %>
+
+
 <%= render "shared/header" %>
 
 <header class="w-full bg-landing bg-cover h-screen-2/4 lg:h-screen-2/4 bg-center flex justify-center items-center  ">
@@ -8,7 +14,7 @@
             <p class="text-4xl font-bold md:text-7xl text-red-600">Welcome to </p>
             <p class="text-4xl font-bold md:text-6xl uppercase text-red-600">Pitcairn Aviation</p>
             <p class="mt-2 text-sm md:text-lg text-center">Your trusted Fixed-Base Operator at Heritage Field Airport (KPTW), serving the greater Pottstown, PA, area</p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl">Contact Us</button>
+            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl"><%= link_to "Contact Us", 'contact',class: "hover:text-white"%></button>
         </div>
         <div class="order-1 lg:order-2">
        

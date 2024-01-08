@@ -1,21 +1,20 @@
 
+<%# Head / Meta Data %>
+<% title("News | Pitcairn Aviation LLC") %>
+<% meta_description("Stay informed with Pitcairn Aviation LLC's blog featuring aviation industry trends, airfield events, and more. Subscribe now for news, events, and promotions!") %>
+<% meta_keywords("Pitcairn Aviation LLC, blog posts, aviation industry trends, airfield events, news, updates, promotions, subscribe, stay informed") %>
+
 
 <%= render "shared/header"%>
 
+<header class="w-full bg-coffeenow bg-cover h-screen-3/4 lg:h-screen-2/4 bg-center flex justify-center items-center  ">
 
-
-
-
-
-
-<header class="w-full bg-coffeenow bg-cover h-screen-2/4 lg:h-screen-3/4 bg-center flex justify-center items-center">
 <section class="px-3 py-5  lg:py-10 font-header">
     <div class="grid lg:grid-cols-2 items-center justify-items-center gap-5">
-        <div class="order-2 lg:order-2 flex flex-col justify-center items-center">
-            <p class="text-4xl font-bold md:text-7xl text-red-800">Get UPDATED</p>
-            <p class="text-4xl font-bold md:text-5xl text-gray-200">News, Events and Promos</p>
-            
-            <button class="text-lg md:text-2xl bg-black text-white py-3 px-10 mt-10 hover:bg-red-600 rounded-xl border-white">Subscribe Now</button>
+        <div class="order-2 lg:order-1 flex flex-col justify-center items-center">
+            <p class="text-5xl font-bold md:text-7xl text-red-800">Stay UPDATED</p>
+           <p class="mt-2 text-4xl font-semibold text-center text-white">News, Events and Promos</p>
+           
         </div>
         <div class="order-1 lg:order-2">
        
@@ -42,7 +41,7 @@
     </div>
   </div>
   <div class="flex flex-col items-center lg:w-1/2">
-    <%=image_tag "coffee-and-newspaper-on-a-desk.webp", alt: "Student pilot taking a discovery flight", class: "lg:h-screen-2/3 lg:rounded-2xl lg:drop-shadow-2xl"%>
+    <%=image_tag "commercial-plane-flying.webp", alt: "Commercial plane flying through the clouds", class: "lg:h-screen-2/3 lg:rounded-2xl lg:drop-shadow-2xl"%>
   </div>
 </section>
 

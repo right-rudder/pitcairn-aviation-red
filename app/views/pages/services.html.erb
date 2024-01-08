@@ -1,3 +1,10 @@
+<%# Head / Meta Data %>
+<% title("Our Services | Pitcairn Aviation LLC") %>
+<% meta_description("Discover our comprehensive range of aviation services at Pitcairn Aviation LLC. From hassle-free fueling to hangar rentals, access to crew and rental cars, and top-line security, we prioritize your aircraft and your comfort. Get in touch for exceptional service!") %>
+<% meta_keywords("Pitcairn Aviation LLC, aviation services, hangar rentals, fueling options, crew cars, rental cars, business facilities, rest facilities, on-site assistance, security gate access") %>
+
+
+
 
 <%= render "shared/header" %>
 
@@ -12,7 +19,7 @@
             <p class="text-4xl font-bold md:text-7xl text-black">OUR SERVICES</p>
             
             <p class="mt-2 text-sm md:text-2xl  text-center">Full-range offerings for your aircraft and, equally important, for your flight experience </p>
-            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl">Get in Touch</button>
+            <button class="text-lg md:text-2xl bg-black text-white py-2 px-5 mt-10 hover:bg-red-600 rounded-xl"><%= link_to "Get in Touch", 'contact',class: "hover:text-white"%></button>
         </div>
         <div class="order-1 lg:order-2">
        
@@ -99,8 +106,10 @@
 
 <div class="flex flex-col w-26 items-center justify-items-center">
 <h3 class="text-3xl font-semibold pt-5 font-header mx-5 text-center">FUEL PRICES</h3>
-<p class="text-gray-600 dark:text-gray-600 mb-12 text-sm font-semibold italic"> <strong>Last Update on:</strong>
-<%= latest_fuel_price.updated_at.strftime("%Y-%m-%d") %></p>
+<p class="text-gray-600 dark:text-gray-600 mb-0 text-sm font-semibold italic"> <strong>Last Update on:</strong>
+<%= latest_fuel_price.updated_at.strftime("%m-%d-%Y") %></p>
+<p class="text-gray-600 dark:text-gray-600 mb-12 text-sm font-semibold italic"> 
+Line Crew: (610)500-3023 or (610)500-3109</p>
 </div>
 
 
