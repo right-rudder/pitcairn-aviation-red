@@ -82,27 +82,12 @@ group :development do
   # gem "spring"
 end
 
-
-gemspec
-
-tzinfo_gem = ENV['TZINFO_GEM']
-
-if tzinfo_gem == 'v1'
-  gem 'tzinfo', '~> 1'
-elsif tzinfo_gem == 'v2'
-  gem 'tzinfo', '~> 2'
-elsif tzinfo_gem == 'head'
-  gem 'tzinfo', :git => 'https://github.com/tzinfo/tzinfo.git'
-end
-
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  
-  gem 'rake'
-  gem 'minitest', '~> 5.0'
+   
 end
 
 
